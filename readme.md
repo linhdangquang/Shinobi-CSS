@@ -1,1 +1,6 @@
-<div style="color:red;"> Learned On TheNetNinja </div>
+## Learned On TheNetNinja
+**Tech:**
+*SASS/SCSS* 
+*GULP*
+*GULP-SASS*
+*GULP-PurgeCSS*
