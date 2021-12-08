@@ -1,0 +1,29 @@
+@use '../variables' as val;
+
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar {
+    @extend %flex-layout;
+    padding: val.$base-padding val.$base-padding * 2 ;
+    box-shadow: val.$base-box-shadow;
+
+    .site-title {
+        font-size: val.$font-size-lg;
+    }
+    .container {
+        @extend %flex-layout;
+    }
+}
+
+@each $key, $val in val.$colors {
+    .navbar-#{$key} {
+        @extend .navbar;
+        background-color: $val;
+    }
+}
